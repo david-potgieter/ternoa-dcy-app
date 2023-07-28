@@ -1,11 +1,11 @@
+import { ThemeProvider } from '@/providers/theme-provider'
 import { NavigationContainer } from '@react-navigation/native'
-import { NativeBaseProvider } from 'native-base'
 import 'react-native-gesture-handler'
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   return (
-    <NativeBaseProvider>
+    <ThemeProvider>
       <NavigationContainer>{children}</NavigationContainer>
-    </NativeBaseProvider>
+    </ThemeProvider>
   )
 }
