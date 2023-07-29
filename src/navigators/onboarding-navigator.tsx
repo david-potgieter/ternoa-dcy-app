@@ -1,4 +1,4 @@
-import { OnboardingPagination } from '@/components/ui/onboarding/onboarding-pagination'
+import { OnboardingPagination } from '@/components/onboarding/onboarding-pagination'
 import { ConvenienceScreen } from '@/screens/onboarding/onboarding-convenience-screen'
 import { PropertyScreen } from '@/screens/onboarding/onboarding-property-screen'
 import { SafetyScreen } from '@/screens/onboarding/onboarding-safety-screen'

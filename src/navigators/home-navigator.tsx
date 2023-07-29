@@ -1,14 +1,11 @@
+import { HomeTabs } from '@/components/nav/home-tabs'
+import { HomeSettingsNavigator } from '@/navigators/home-settings-navigator'
+import { HomeSwapScreen } from '@/screens/home/home-swap-screen'
 import { HomeWalletScreen } from '@/screens/home/home-wallet-screen'
 import { HomeRoutes } from '@/types/route-types'
-import { BottomTabBarProps, createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Box } from 'native-base'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 const { Screen, Navigator } = createBottomTabNavigator()
-
-export function HomeTabs(props: BottomTabBarProps) {
-  console.log(props)
-  return <Box bgColor="red.400">TABS</Box>
-}
 
 export function HomeNavigator() {
   return (
@@ -21,6 +18,8 @@ export function HomeNavigator() {
       }}
       tabBar={props => <HomeTabs {...props} />}>
       <Screen name={HomeRoutes.HOME_WALLET} component={HomeWalletScreen} />
+      <Screen name={HomeRoutes.HOME_SWAPS} component={HomeSwapScreen} />
+      <Screen name={HomeRoutes.HOME_SETTINGS_ROOT} component={HomeSettingsNavigator} />
     </Navigator>
   )
 }

@@ -8,7 +8,7 @@ import { WalletCreateStoreScreen } from '@/screens/wallet/create/wallet-create-s
 import { WalletCreateSuccessScreen } from '@/screens/wallet/create/wallet-create-screen-success'
 import { WalletImportPermissionsScreen } from '@/screens/wallet/import/wallet-import-screen-permissions'
 import { WalletRoutes } from '@/types/route-types'
-import { createStackNavigator } from '@react-navigation/stack'
+import { TransitionPresets, createStackNavigator } from '@react-navigation/stack'
 
 const { Screen, Navigator } = createStackNavigator()
 
@@ -18,6 +18,7 @@ export function WalletCreateNavigator() {
       screenOptions={{
         gestureEnabled: false,
         headerStyle: extraStyle.navHeader,
+        ...TransitionPresets.ModalFadeTransition,
         headerLeft: () => <HeaderLeft />,
       }}>
       <Screen

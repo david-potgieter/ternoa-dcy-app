@@ -24,16 +24,23 @@ export enum WalletRoutes {
 
 export enum HomeRoutes {
   HOME_ROOT = 'HomeRoot',
-  HOME_WALLET = 'HomeWallet',
-  HOME_SWAPS = 'HomeSwaps',
-  HOME_SETTINGS = 'HomeSettings',
+  HOME_WALLET = 'Wallet',
+  HOME_SWAPS = 'Swap',
+  HOME_SETTINGS_ROOT = 'Settings',
+  HOME_SETTINGS_LANDING = 'SettingsLanding',
+  HOME_SEND_MODAL = 'SendModal',
+  HOME_RECEIVE_MODAL = 'ReceiveModal',
+  HOME_TRANSACTION_DETAILS_MODAL = 'TransactionDetailsModal',
 }
 
 export enum SendRoutes {}
 
 type OnboardingRouteParams = Record<OnboardingRoutes, undefined>
 type WalletRouteParams = Record<WalletRoutes, undefined>
-type HomeRouteParams = Record<HomeRoutes, undefined | { screen: string }>
+type HomeRouteParams = Record<
+  HomeRoutes,
+  undefined | { screen: string } | { transaction: string | number }
+>
 
 export type NavParams = NativeStackNavigationProp<
   OnboardingRouteParams & WalletRouteParams & HomeRouteParams
