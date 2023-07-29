@@ -16,7 +16,6 @@ export const extraStyle = {
   baseContainer: {
     width: '100%',
     height: '100%',
-    paddingHorizontal: 6,
     backgroundColor: 'baseBg.500',
   },
   navHeader: {
@@ -74,7 +73,8 @@ export const theme = extendTheme({
     Center: {
       baseStyle: {},
       variants: {
-        container: () => extraStyle.baseContainer,
+        container: () => ({ ...extraStyle.baseContainer, paddingHorizontal: 6 }),
+        fullWidth: () => ({ ...extraStyle.baseContainer }),
         onboardingText: () => ({
           width: 'full',
           marginBottom: 32,
@@ -99,11 +99,20 @@ export const theme = extendTheme({
           lineHeight: '42px',
         }),
         buttonText: () => ({ ...extraStyle.baseButtonText }),
+        confirmed: () => ({ color: 'green.500', textTransform: 'capitalize' }),
+        pending: () => ({ color: 'primary.500', textTransform: 'capitalize' }),
+        cancelled: () => ({ color: 'red.500', textTransform: 'capitalize' }),
         headerTitle: () => ({
           fontSize: '16px',
           fontWeight: '600',
           fontFamily: 'Archivo-Regular',
           lineHeight: '24px',
+        }),
+        coinText: () => ({
+          fontSize: '40px',
+          fontWeight: '400',
+          fontFamily: 'Archivo-Regular',
+          lineHeight: '44px',
         }),
       },
     },
