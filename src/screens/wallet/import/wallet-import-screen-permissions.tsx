@@ -13,7 +13,7 @@ export function WalletImportPermissionsScreen() {
       <Box w="full">
         <GradientButton
           label="Create Password"
-          action={() => navigation.navigate(WalletRoutes.WALLET_IMPORT_SUCCESS)}
+          action={() => navigation.navigate(WalletRoutes.WALLET_CREATE_SECURE_START)}
         />
       </Box>
     </Center>
