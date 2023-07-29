@@ -8,7 +8,7 @@ export function HeaderLeft() {
   return (
     <Pressable onPress={() => navigation.popToTop()}>
       <Center h="10" w="6">
-        <SVGImg width={30} height="100%" />
+        <SVGImg width="30" height="100%" />
       </Center>
     </Pressable>
   )
