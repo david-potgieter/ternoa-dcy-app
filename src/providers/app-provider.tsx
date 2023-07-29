@@ -1,11 +1,12 @@
+import { ThemeProvider } from '@/providers/theme-provider'
 import { NavigationContainer } from '@react-navigation/native'
-import { NativeBaseProvider } from 'native-base'
+import RNBootSplash from 'react-native-bootsplash'
 import 'react-native-gesture-handler'
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   return (
-    <NativeBaseProvider>
-      <NavigationContainer>{children}</NavigationContainer>
-    </NativeBaseProvider>
+    <ThemeProvider>
+      <NavigationContainer onReady={() => RNBootSplash.hide()}>{children}</NavigationContainer>
+    </ThemeProvider>
   )
 }
