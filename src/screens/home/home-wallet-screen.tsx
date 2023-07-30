@@ -1,6 +1,8 @@
 import SendSVG from '@/components/ui/image/icons/send.svg'
 import WalletSVG from '@/components/ui/image/icons/wallet2.svg'
 import { WalletHeader } from '@/components/wallet/wallet-header'
+import { getTransactions } from '@/config/dot/polkadot-config'
+import { QUERY_KEYS } from '@/config/query/query-config'
 import { transactions } from '@/state/mocked/transactions'
 import { HomeRoutes, NavParams } from '@/types/route-types'
 import { Transaction } from '@/types/wallet-types'
@@ -8,6 +10,7 @@ import { useNavigation } from '@react-navigation/native'
 import { parseISO } from 'date-fns'
 import { format, utcToZonedTime } from 'date-fns-tz'
 import { Box, Center, HStack, Pressable, ScrollView, Text, VStack } from 'native-base'
+import { useQuery } from 'react-query'
 
 export function TransactionItemIcon({ type }: { type: string }) {
   switch (type) {
@@ -76,6 +79,13 @@ export function TransactionItem({ item }: { item: Transaction }) {
 }
 
 export function WalletTransactions() {
+  const { data, isLoading, isError, error } = useQuery(
+    QUERY_KEYS.WALLET_TRANSACTIONS,
+    getTransactions,
+  )
+
+  if (isError) console.log(error)
+
   return (
     <ScrollView w="full" h="80" py="6">
       {transactions.map(transaction => (
