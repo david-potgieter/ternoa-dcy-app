@@ -497,6 +497,8 @@ PODS:
     - React-Core
   - RNGestureHandler (2.12.0):
     - React-Core
+  - RNKeychain (8.1.2):
+    - React-Core
   - RNReanimated (3.4.1):
     - DoubleConversion
     - FBLazyVector
@@ -605,6 +607,7 @@ DEPENDENCIES:
   - RNBootSplash (from `../node_modules/react-native-bootsplash`)
   - "RNCMaskedView (from `../node_modules/@react-native-masked-view/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNKeychain (from `../node_modules/react-native-keychain`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -717,6 +720,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-masked-view/masked-view"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNKeychain:
+    :path: "../node_modules/react-native-keychain"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -783,6 +788,7 @@ SPEC CHECKSUMS:
   RNBootSplash: 85f6b879c080e958afdb4c62ee04497b05fd7552
   RNCMaskedView: 949696f25ec596bfc697fc88e6f95cf0c79669b6
   RNGestureHandler: dec4645026e7401a0899f2846d864403478ff6a5
+  RNKeychain: a65256b6ca6ba6976132cc4124b238a5b13b3d9c
   RNReanimated: 53ca20eee770c41173703f5948cd8898aa08262c
   RNScreens: 6a8a3c6b808aa48dca1780df7b73ea524f602c63
   RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f

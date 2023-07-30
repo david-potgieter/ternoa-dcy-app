@@ -15,6 +15,24 @@
 		638833422A74B149002CB299 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638833412A74B149002CB299 /* BootSplash.storyboard */; };
 		7699B88040F8A987B510C191 /* libPods-ternoaApp-ternoaAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ternoaApp-ternoaAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CE3A6AF22DED4D97885E4309 /* Metropolis-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D8988A440C7846E6A3EEA5C7 /* Metropolis-Black.otf */; };
+		9192BA12F8494B7D8011E79B /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE96E493C0614030A496C0A8 /* Metropolis-Bold.otf */; };
+		5A0F32EB597C4CA093D33D87 /* Metropolis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A51F236D6D74DFF9CA41185 /* Metropolis-ExtraBold.otf */; };
+		33C23A636D2E4A21BA449F48 /* Metropolis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7A40A2FC64F4C9C8A8AAE /* Metropolis-ExtraLight.otf */; };
+		6BC7489E3F7C443F9D3BAEE0 /* Metropolis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C7983D854824055A7DC49AA /* Metropolis-Light.otf */; };
+		F3E69EE96A0A422DA27E0602 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3BDD7712C9B4DFD899C4AB3 /* Metropolis-Medium.otf */; };
+		C57C8AEF14CF4344867DFE2D /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBDCD22F2F3349C59F322083 /* Metropolis-Regular.otf */; };
+		6A58FE46F0DD4991A9B972F1 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4493E493A4C47338F13E103 /* Metropolis-SemiBold.otf */; };
+		D7F45C4578C949A582E981DF /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8AD6F23C0404473781E1C914 /* Metropolis-Thin.otf */; };
+		2571EEFAAAE147F7BE51A95A /* Archivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4E129B3EEE944E1A20465FE /* Archivo-Black.ttf */; };
+		7BB505F8E3A64B54AFCCCC9F /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D93463535044CE7A8FEBE8C /* Archivo-Bold.ttf */; };
+		F68A51F6DD7445F982601240 /* Archivo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE796670A7A94FF8A9D397F8 /* Archivo-ExtraBold.ttf */; };
+		6DE51666AD1746FAB73CD5E1 /* Archivo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FE764F610F8472389FA2623 /* Archivo-ExtraLight.ttf */; };
+		40964D696C06432987DA6311 /* Archivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B46AD05430964ECAA483A43D /* Archivo-Light.ttf */; };
+		35D75B8789E24B9581EE9C50 /* Archivo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1C4C4B50A1F477A903384B4 /* Archivo-Medium.ttf */; };
+		6AD185C224564A288B8B77B5 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A57200F845A94ABA8B7AB14E /* Archivo-Regular.ttf */; };
+		5BC33A0D71624947890F0138 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7CDFA5DE6A64F6388A432B6 /* Archivo-SemiBold.ttf */; };
+		690AA3B6694D40D5B2AEB398 /* Archivo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45A2C76FDD0649D699B4C529 /* Archivo-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +64,24 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ternoaApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ternoaApp-ternoaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ternoaApp-ternoaAppTests.release.xcconfig"; path = "Target Support Files/Pods-ternoaApp-ternoaAppTests/Pods-ternoaApp-ternoaAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D8988A440C7846E6A3EEA5C7 /* Metropolis-Black.otf */ = {isa = PBXFileReference; name = "Metropolis-Black.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE96E493C0614030A496C0A8 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; name = "Metropolis-Bold.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A51F236D6D74DFF9CA41185 /* Metropolis-ExtraBold.otf */ = {isa = PBXFileReference; name = "Metropolis-ExtraBold.otf"; path = "../assets/fonts/AvenirNext/Metropolis-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9CF7A40A2FC64F4C9C8A8AAE /* Metropolis-ExtraLight.otf */ = {isa = PBXFileReference; name = "Metropolis-ExtraLight.otf"; path = "../assets/fonts/AvenirNext/Metropolis-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C7983D854824055A7DC49AA /* Metropolis-Light.otf */ = {isa = PBXFileReference; name = "Metropolis-Light.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3BDD7712C9B4DFD899C4AB3 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; name = "Metropolis-Medium.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBDCD22F2F3349C59F322083 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; name = "Metropolis-Regular.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F4493E493A4C47338F13E103 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; name = "Metropolis-SemiBold.otf"; path = "../assets/fonts/AvenirNext/Metropolis-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8AD6F23C0404473781E1C914 /* Metropolis-Thin.otf */ = {isa = PBXFileReference; name = "Metropolis-Thin.otf"; path = "../assets/fonts/AvenirNext/Metropolis-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E4E129B3EEE944E1A20465FE /* Archivo-Black.ttf */ = {isa = PBXFileReference; name = "Archivo-Black.ttf"; path = "../assets/fonts/Archivo/Archivo-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1D93463535044CE7A8FEBE8C /* Archivo-Bold.ttf */ = {isa = PBXFileReference; name = "Archivo-Bold.ttf"; path = "../assets/fonts/Archivo/Archivo-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE796670A7A94FF8A9D397F8 /* Archivo-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Archivo-ExtraBold.ttf"; path = "../assets/fonts/Archivo/Archivo-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FE764F610F8472389FA2623 /* Archivo-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Archivo-ExtraLight.ttf"; path = "../assets/fonts/Archivo/Archivo-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B46AD05430964ECAA483A43D /* Archivo-Light.ttf */ = {isa = PBXFileReference; name = "Archivo-Light.ttf"; path = "../assets/fonts/Archivo/Archivo-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1C4C4B50A1F477A903384B4 /* Archivo-Medium.ttf */ = {isa = PBXFileReference; name = "Archivo-Medium.ttf"; path = "../assets/fonts/Archivo/Archivo-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A57200F845A94ABA8B7AB14E /* Archivo-Regular.ttf */ = {isa = PBXFileReference; name = "Archivo-Regular.ttf"; path = "../assets/fonts/Archivo/Archivo-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7CDFA5DE6A64F6388A432B6 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; name = "Archivo-SemiBold.ttf"; path = "../assets/fonts/Archivo/Archivo-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45A2C76FDD0649D699B4C529 /* Archivo-Thin.ttf */ = {isa = PBXFileReference; name = "Archivo-Thin.ttf"; path = "../assets/fonts/Archivo/Archivo-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +161,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6440606961CF4161B491B62F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -150,6 +187,32 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		6440606961CF4161B491B62F /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				D8988A440C7846E6A3EEA5C7 /* Metropolis-Black.otf */,
+				FE96E493C0614030A496C0A8 /* Metropolis-Bold.otf */,
+				2A51F236D6D74DFF9CA41185 /* Metropolis-ExtraBold.otf */,
+				9CF7A40A2FC64F4C9C8A8AAE /* Metropolis-ExtraLight.otf */,
+				6C7983D854824055A7DC49AA /* Metropolis-Light.otf */,
+				C3BDD7712C9B4DFD899C4AB3 /* Metropolis-Medium.otf */,
+				EBDCD22F2F3349C59F322083 /* Metropolis-Regular.otf */,
+				F4493E493A4C47338F13E103 /* Metropolis-SemiBold.otf */,
+				8AD6F23C0404473781E1C914 /* Metropolis-Thin.otf */,
+				E4E129B3EEE944E1A20465FE /* Archivo-Black.ttf */,
+				1D93463535044CE7A8FEBE8C /* Archivo-Bold.ttf */,
+				AE796670A7A94FF8A9D397F8 /* Archivo-ExtraBold.ttf */,
+				1FE764F610F8472389FA2623 /* Archivo-ExtraLight.ttf */,
+				B46AD05430964ECAA483A43D /* Archivo-Light.ttf */,
+				B1C4C4B50A1F477A903384B4 /* Archivo-Medium.ttf */,
+				A57200F845A94ABA8B7AB14E /* Archivo-Regular.ttf */,
+				D7CDFA5DE6A64F6388A432B6 /* Archivo-SemiBold.ttf */,
+				45A2C76FDD0649D699B4C529 /* Archivo-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -248,6 +311,24 @@
 				638833422A74B149002CB299 /* BootSplash.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				CE3A6AF22DED4D97885E4309 /* Metropolis-Black.otf in Resources */,
+				9192BA12F8494B7D8011E79B /* Metropolis-Bold.otf in Resources */,
+				5A0F32EB597C4CA093D33D87 /* Metropolis-ExtraBold.otf in Resources */,
+				33C23A636D2E4A21BA449F48 /* Metropolis-ExtraLight.otf in Resources */,
+				6BC7489E3F7C443F9D3BAEE0 /* Metropolis-Light.otf in Resources */,
+				F3E69EE96A0A422DA27E0602 /* Metropolis-Medium.otf in Resources */,
+				C57C8AEF14CF4344867DFE2D /* Metropolis-Regular.otf in Resources */,
+				6A58FE46F0DD4991A9B972F1 /* Metropolis-SemiBold.otf in Resources */,
+				D7F45C4578C949A582E981DF /* Metropolis-Thin.otf in Resources */,
+				2571EEFAAAE147F7BE51A95A /* Archivo-Black.ttf in Resources */,
+				7BB505F8E3A64B54AFCCCC9F /* Archivo-Bold.ttf in Resources */,
+				F68A51F6DD7445F982601240 /* Archivo-ExtraBold.ttf in Resources */,
+				6DE51666AD1746FAB73CD5E1 /* Archivo-ExtraLight.ttf in Resources */,
+				40964D696C06432987DA6311 /* Archivo-Light.ttf in Resources */,
+				35D75B8789E24B9581EE9C50 /* Archivo-Medium.ttf in Resources */,
+				6AD185C224564A288B8B77B5 /* Archivo-Regular.ttf in Resources */,
+				5BC33A0D71624947890F0138 /* Archivo-SemiBold.ttf in Resources */,
+				690AA3B6694D40D5B2AEB398 /* Archivo-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
