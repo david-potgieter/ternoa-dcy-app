@@ -40,6 +40,7 @@ export const theme = extendTheme({
       500: '#384657',
       600: '#202832',
       700: '#181E25',
+      800: '#101419',
     },
     tBlue: {
       200: '#8AD4EC',
@@ -70,6 +71,18 @@ export const theme = extendTheme({
         onboardingImage: () => ({ marginBottom: 10 }),
       },
     },
+    Button: {
+      baseStyle: {
+        ...extraStyle.baseButton,
+        _text: {
+          ...extraStyle.baseButtonText,
+        },
+      },
+      variants: {
+        secondary: () => ({ backgroundColor: 'tGray.600' }),
+        disabled: () => ({ backgroundColor: 'tGray.800', _text: { color: 'tGray.500' } }),
+      },
+    },
     Center: {
       baseStyle: {},
       variants: {
@@ -78,6 +91,14 @@ export const theme = extendTheme({
         onboardingText: () => ({
           width: 'full',
           marginBottom: 32,
+        }),
+      },
+    },
+    Image: {
+      baseStyle: { resizeMode: 'contain' },
+      variants: {
+        onboarding: () => ({
+          width: 295,
         }),
       },
     },
@@ -140,27 +161,7 @@ export const theme = extendTheme({
     //     }),
     //   },
     // },
-    Button: {
-      baseStyle: {
-        ...extraStyle.baseButton,
-        _text: {
-          ...extraStyle.baseButtonText,
-        },
-      },
-      variants: {
-        secondary: () => ({
-          backgroundColor: 'tGray.600',
-        }),
-      },
-    },
-    Image: {
-      baseStyle: { resizeMode: 'contain' },
-      variants: {
-        onboarding: () => ({
-          width: 295,
-        }),
-      },
-    },
+
     // Center: {
     //   variants: {
     //     error: () => ({
