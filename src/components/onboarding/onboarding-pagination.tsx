@@ -1,17 +1,19 @@
 import { SecondaryButton } from '@/components/ui/button/secondary-button'
-import { WalletRoutes } from '@/types/route-types'
+import { onBoardedAtom } from '@/state/atoms/onboarded-atom'
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs'
+import { useSetAtom } from 'jotai'
 import { Box, Center, HStack } from 'native-base'
 
 export function OnboardingPagination(props: BottomTabBarProps) {
   const { state, navigation } = props
+  const setOnBoarded = useSetAtom(onBoardedAtom)
 
   function handleNext() {
     const next = state.index + 1
     if (next < state.routes.length) {
       navigation.navigate(state.routes[next].name)
     } else {
-      navigation.navigate(WalletRoutes.WALLET_ROOT)
+      setOnBoarded(true)
     }
   }
 

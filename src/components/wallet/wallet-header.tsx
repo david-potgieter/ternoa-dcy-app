@@ -32,7 +32,7 @@ export function WalletHeader() {
                 <Text>{data?.token}</Text>
               </Center>
               <Center>
-                <CoinText label={`${data?.balance} ${data?.token}`} />
+                <CoinText label={`${parseFloat(data?.balance?.toFixed(3))} ${data?.token}`} />
                 <Text>$ {data?.usdRate * data?.balance}</Text>
               </Center>
               <Center>
