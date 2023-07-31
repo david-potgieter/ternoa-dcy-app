@@ -2,6 +2,7 @@ import { BlurView } from '@react-native-community/blur'
 import { useNavigation } from '@react-navigation/native'
 import { Box, Center } from 'native-base'
 import { Pressable, StyleSheet } from 'react-native'
+// import QRSVG from 'src/assets/icons/qr.svg'
 
 export function TransactionDetailModal() {
   const navigation = useNavigation()
@@ -37,7 +38,7 @@ export function TransactionDetailModal() {
           <Box w="12" h="1" bgColor="tGray.300" rounded="full" />
         </Center>
         <Box bgColor="baseBg.500" h="full">
-          Dude Box C
+          Detail
         </Box>
       </Box>
     </Box>
