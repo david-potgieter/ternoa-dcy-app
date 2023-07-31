@@ -1,28 +1,15 @@
+import { GenericActionButton } from '@/components/ui/button/generic-action-button'
 import { GradientButton } from '@/components/ui/button/gradient-button'
+import EyeSVG from '@/components/ui/image/icons/eye.svg'
+import { BlueText } from '@/components/ui/text/blue-text'
+import { MnemonicWord } from '@/components/ui/text/mnemonic-word'
+import { mnemonicToArray } from '@/helpers/mnemonic-to-array'
 import { NavParams, WalletRoutes } from '@/types/route-types'
 import { BlurView } from '@react-native-community/blur'
 import { useNavigation } from '@react-navigation/native'
 import { Box, Button, Center, HStack, Text, VStack } from 'native-base'
 import { Fragment, useState } from 'react'
-import { Pressable, StyleSheet } from 'react-native'
-
-export function mnemonicToArray(mnemonic: string) {
-  const arr = mnemonic.split(' ')
-  const half = Math.ceil(arr.length / 2)
-  const firstHalf = arr.slice(0, half)
-  const secondHalf = arr.slice(-half)
-  return [firstHalf, secondHalf]
-}
-
-export function MnemonicWord({ word, index }: { word: string; index: number }) {
-  return (
-    <Center key={word} bgColor="tGray.600" p="1" rounded="lg">
-      <Text>
-        {index + 1}. {word}
-      </Text>
-    </Center>
-  )
-}
+import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   absolute: {
@@ -45,8 +32,8 @@ export function WalletCreateStoreScreen() {
     <Center safeArea variant="container" justifyContent="space-between" pb="10">
       <Box w="full">
         <Box>
-          <Text>Write Down Your Seed Phrase</Text>
-          <Text>
+          <BlueText label="Write Down Your Seed Phrase" size="16px" />
+          <Text fontSize="sm" color="tGray.300">
             This is your seed phrase. Write it down on a paper and keep it in a safe place. You'll
             be asked to re-enter this phrase (in order) on the next step.
           </Text>
@@ -61,13 +48,13 @@ export function WalletCreateStoreScreen() {
             space="8">
             <VStack w="1/2" space="5" mx="-2">
               {firstHalf.map((word, index) => (
-                <MnemonicWord word={word} index={index} />
+                <MnemonicWord key={word} word={word} index={index} />
               ))}
             </VStack>
 
             <VStack w="1/2" space="5" mx="-2">
               {secondHalf.map((word, index) => (
-                <MnemonicWord word={word} index={index + 6} />
+                <MnemonicWord key={word} word={word} index={index + 6} />
               ))}
             </VStack>
           </HStack>
@@ -75,9 +62,17 @@ export function WalletCreateStoreScreen() {
           {!enabled ? (
             <Fragment>
               <Center position="absolute" zIndex="10" w="full" h="full">
-                <Pressable onPress={() => setEnabled(!enabled)}>
-                  <Box>hello</Box>
-                </Pressable>
+                <Text mb="3" fontWeight="600">
+                  Tap to reveal your seed phrase
+                </Text>
+                <Text mb="10" fontSize="xs" color="tGray.400">
+                  Make sure no one is watching your screen
+                </Text>
+                <GenericActionButton
+                  label="View"
+                  icon={EyeSVG}
+                  action={() => setEnabled(!enabled)}
+                />
               </Center>
               <BlurView
                 style={styles.absolute}
