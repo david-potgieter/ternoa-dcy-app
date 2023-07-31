@@ -1,8 +1,42 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# DCY Crypto App
 
-# Getting Started
+DCY Crypto App demo for both iOS and Android platforms. This [**React Native**](https://reactnative.dev) app was bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Scripts Overview
+
+The project includes a variety of NPM scripts that aid with multiple development tasks:
+
+- `yarn android` & `yarn ios`: Run the project on Android and iOS devices respectively.
+- `yarn lint`: Maintain code quality by employing ESLint, a static code analysis tool.
+- `yarn import:assets`: Import all necessary assets into the React Native project.
+- `yarn generate:splash`: Automate the generation of a splash screen for both iOS and Android.
+- `yarn pods`: Install any pod dependencies necessary for the iOS platform.
+- `yarn start` & `yarn start:reset`: Initiate the React Native Metro Bundler, the `reset` version also includes cache clearing.
+
+## Getting Started
+
+Before running this project, ensure your environment is set up correctly. Follow the instructions provided in React Native's [official setup guide](https://reactnative.dev/docs/environment-setup).
+
+Once set up, clone this repository and install the dependencies by executing `yarn get-started`. Below are the instructions form a new install.
+
+## Key Dependencies
+
+The project relies on several essential dependencies:
+
+- `react` & `react-native`: The foundation for building native applications using JavaScript and React.
+- `@polkadot/api`: Facilitates connection and interaction with Polkadot/Substrate-based blockchains.
+- `react-native-bootsplash`: Handles the generation and management of the application's splash screen.
+- `react-native-keychain`: Securely stores mnemonic and password using the device keychain.
+- `react-query`: A data synchronization library simplifying fetching, caching, and state management.
+- `zod`: Ensures data integrity within forms making sure they are correctly typed.
+- `react-hook-form`: Assists with efficient form management in the app.
+- `native-base`: A pre-built UI component library for accelerated and simplified app development.
+- `jotai`: A flexible, straightforward state management library.
+- `date-fns`: Manipulates JavaScript dates in a browser & Node.js, offering a comprehensive set of date/time functionalities.
+
+The integration of these libraries equips the DCY Crypto App with a diverse feature set while promoting high code quality and efficiency. Dive into coding with us!
+
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
@@ -11,58 +45,24 @@ First, you will need to start **Metro**, the JavaScript _bundler_ that ships _wi
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
 yarn start
 ```
 
-## Step 2: Start your Application
+## Step 2: Start the Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_. Run the following command to start a _Android_ or _iOS_ app:
 
 ### For Android
 
 ```bash
-# using npm
-npm run android
-
-# OR using Yarn
 yarn android
 ```
 
 ### For iOS
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
 yarn ios
 ```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
 # Troubleshooting
 
