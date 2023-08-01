@@ -13,7 +13,6 @@ export const importWalletFormSchema = z
 
 export const createWalletFormSchema = z
   .object({
-    seedPhrase: z.string().min(48),
     password: z.string().min(8),
     confirmPassword: z.string().min(8),
   })
@@ -22,5 +21,10 @@ export const createWalletFormSchema = z
     path: ['confirmPassword'],
   })
 
+export const createContactFormSchema = z.object({
+  contactAddress: z.string().min(20),
+})
+
 export type WalletImportFormValues = z.infer<typeof importWalletFormSchema>
 export type WalletCreateFormValues = z.infer<typeof createWalletFormSchema>
+export type ContactCreateFormValues = z.infer<typeof createContactFormSchema>

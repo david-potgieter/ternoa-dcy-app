@@ -74,13 +74,11 @@ export function WalletCreateConfirmScreen() {
   }
 
   function handleFinish() {
+    navigation.navigate(WalletRoutes.WALLET_CREATE_SUCCESS)
     if (JSON.stringify(userSequence) === JSON.stringify(correctSequence)) {
       console.log('You have entered the correct sequence!')
-      navigation.navigate(WalletRoutes.WALLET_CREATE_SUCCESS)
     } else {
       console.log('The sequence you entered is incorrect. Please try again.')
-      setUserSequence([])
-      setCurrentStep(0)
     }
   }
 

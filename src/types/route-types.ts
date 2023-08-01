@@ -1,3 +1,5 @@
+import { Wallet } from '@/types/wallet-types'
+import { RouteProp } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 
 export enum OnboardingRoutes {
@@ -39,8 +41,10 @@ type OnboardingRouteParams = Record<OnboardingRoutes, undefined>
 type WalletRouteParams = Record<WalletRoutes, undefined>
 type HomeRouteParams = Record<
   HomeRoutes,
-  undefined | { screen: string } | { transaction: string | number }
+  undefined | { screen: string } | { transactionId: string | number } | { wallet: Wallet }
 >
+
+export type RouteParams = RouteProp<HomeRouteParams | WalletRouteParams | OnboardingRouteParams>
 
 export type NavParams = NativeStackNavigationProp<
   OnboardingRouteParams & WalletRouteParams & HomeRouteParams
