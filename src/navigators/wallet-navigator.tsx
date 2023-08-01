@@ -13,7 +13,8 @@ export function WalletNavigator() {
         headerShown: false,
         ...TransitionPresets.SlideFromRightIOS,
         gestureEnabled: false,
-      }}>
+      }}
+      initialRouteName={WalletRoutes.WALLET_LANDING}>
       <Screen name={WalletRoutes.WALLET_LANDING} component={WalletScreen} />
       <Screen name={WalletRoutes.WALLET_IMPORT_ROOT} component={WalletImportNavigator} />
       <Screen name={WalletRoutes.WALLET_CREATE_ROOT} component={WalletCreateNavigator} />

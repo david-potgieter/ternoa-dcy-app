@@ -3,7 +3,7 @@ import { Box, Center, Text } from 'native-base'
 import { StyleSheet } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 
-export function CoinText({ label }: { label: string }) {
+export function BlueText({ label, size = '40px' }: { label: string; size?: string }) {
   const styles = StyleSheet.create({
     maskedView: { flex: 1, flexDirection: 'row', height: '100%' },
     linearGradient: { height: '100%', width: '100%' },
@@ -15,7 +15,9 @@ export function CoinText({ label }: { label: string }) {
         style={styles.maskedView}
         maskElement={
           <Center>
-            <Text variant="coinText">{label}</Text>
+            <Text variant="blueText" fontSize={size}>
+              {label}
+            </Text>
           </Center>
         }>
         <LinearGradient

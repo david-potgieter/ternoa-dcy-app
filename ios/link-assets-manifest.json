@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Archivo/Archivo-Black.ttf",
+      "sha1": "49cd46f1f23bfc8b0db2ad65825ecd00b4917627"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-Bold.ttf",
+      "sha1": "f0ed42979a49d75fdecf08293f8e7eaeb5a2d8be"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-ExtraBold.ttf",
+      "sha1": "3193ea6ee7d61d34780a4dfb72ebe1f590694e2e"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-ExtraLight.ttf",
+      "sha1": "6a339255a47331e93b9efcd8f9913b68d97f4773"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-Light.ttf",
+      "sha1": "df6a2d8116d5a8ffa65385dfb4eab2e1fa7c60b9"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-Medium.ttf",
+      "sha1": "e513ab6b10594cbbb749aa56d4d66391bd3a35c7"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-Regular.ttf",
+      "sha1": "eb245bb578205a32c8b301a41adfff248ee73e53"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-SemiBold.ttf",
+      "sha1": "e1fd9e25f72d95830f0e341dccb9c651f36b57ec"
+    },
+    {
+      "path": "assets/fonts/Archivo/Archivo-Thin.ttf",
+      "sha1": "adffc2d3fdfcfb07ea49dafd1314bee9baf2fcd1"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Black.otf",
+      "sha1": "0b806ce10e950793a547fcc23d6ce71df4104e96"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Bold.otf",
+      "sha1": "335e5e57450f52a95b5bc3cd03d91071ef389c28"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-ExtraBold.otf",
+      "sha1": "5ba5282242a60d98632201da852da566f365398e"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-ExtraLight.otf",
+      "sha1": "6ca6abc086c1b75e676e93aa10abb32ebf4c0e81"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Light.otf",
+      "sha1": "e6651a2af53a77acbc2d19220c5af80bbfcc65dc"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Medium.otf",
+      "sha1": "8d5181b06452ce20ac337391dc60b9dd07b083de"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Regular.otf",
+      "sha1": "dc10ba3cd5aea203f7d0f5af99e72163514a55d5"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-SemiBold.otf",
+      "sha1": "4ebfc059e586c91d024d359f0ed3fc64d9ec4d2c"
+    },
+    {
+      "path": "assets/fonts/AvenirNext/Metropolis-Thin.otf",
+      "sha1": "37f2a7b036ac541011cb175c5197056ae814d98f"
+    }
+  ]
+}

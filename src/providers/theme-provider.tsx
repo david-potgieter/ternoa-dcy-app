@@ -40,6 +40,8 @@ export const theme = extendTheme({
       500: '#384657',
       600: '#202832',
       700: '#181E25',
+      800: '#101419',
+      900: '#18191A',
     },
     tBlue: {
       200: '#8AD4EC',
@@ -61,6 +63,9 @@ export const theme = extendTheme({
     tOrange: {
       500: '#FFAA6C',
     },
+    tRed: {
+      500: '#EA3943',
+    },
   },
   components: {
     Box: {
@@ -68,6 +73,19 @@ export const theme = extendTheme({
       variants: {
         container: () => extraStyle.baseContainer,
         onboardingImage: () => ({ marginBottom: 10 }),
+      },
+    },
+    Button: {
+      baseStyle: {
+        ...extraStyle.baseButton,
+        _text: {
+          ...extraStyle.baseButtonText,
+        },
+      },
+      variants: {
+        secondary: () => ({ backgroundColor: 'tGray.600' }),
+        disabled: () => ({ backgroundColor: 'tGray.800', _text: { color: 'tGray.500' } }),
+        danger: () => ({ backgroundColor: 'red.400', _text: { color: 'white' } }),
       },
     },
     Center: {
@@ -78,6 +96,14 @@ export const theme = extendTheme({
         onboardingText: () => ({
           width: 'full',
           marginBottom: 32,
+        }),
+      },
+    },
+    Image: {
+      baseStyle: { resizeMode: 'contain' },
+      variants: {
+        onboarding: () => ({
+          width: 295,
         }),
       },
     },
@@ -99,16 +125,16 @@ export const theme = extendTheme({
           lineHeight: '42px',
         }),
         buttonText: () => ({ ...extraStyle.baseButtonText }),
-        confirmed: () => ({ color: 'green.500', textTransform: 'capitalize' }),
+        confirmed: () => ({ color: 'tGreen.500', textTransform: 'capitalize' }),
         pending: () => ({ color: 'primary.500', textTransform: 'capitalize' }),
-        cancelled: () => ({ color: 'red.500', textTransform: 'capitalize' }),
+        cancelled: () => ({ color: 'tRed.500', textTransform: 'capitalize' }),
         headerTitle: () => ({
           fontSize: '16px',
           fontWeight: '600',
           fontFamily: 'Archivo-Regular',
           lineHeight: '24px',
         }),
-        coinText: () => ({
+        blueText: () => ({
           fontSize: '40px',
           fontWeight: '400',
           fontFamily: 'Archivo-Regular',
@@ -116,79 +142,6 @@ export const theme = extendTheme({
         }),
       },
     },
-    // Box: {
-    //   variants: {
-    //     textInput: () => ({
-    //       width: '100%',
-    //       maxHeight: 105,
-    //     }),
-    //     screen: () => ({
-    //       width: '100%',
-    //       height: '100%',
-    //       padding: 4,
-    //       _light: { backgroundColor: '#F9FAFE' },
-    //       _dark: { backgroundColor: '#111111' },
-    //     }),
-    //     card: () => ({
-    //       rounded: '2xl',
-    //       shadowRadius: 5,
-    //       shadowOpacity: 0.1,
-    //       shadowColor: '#111111',
-    //       shadowOffset: { width: 0, height: 4 },
-    //       _light: { backgroundColor: 'white' },
-    //       _dark: { backgroundColor: '#1C1C20' },
-    //     }),
-    //   },
-    // },
-    Button: {
-      baseStyle: {
-        ...extraStyle.baseButton,
-        _text: {
-          ...extraStyle.baseButtonText,
-        },
-      },
-      variants: {
-        secondary: () => ({
-          backgroundColor: 'tGray.600',
-        }),
-      },
-    },
-    Image: {
-      baseStyle: { resizeMode: 'contain' },
-      variants: {
-        onboarding: () => ({
-          width: 295,
-        }),
-      },
-    },
-    // Center: {
-    //   variants: {
-    //     error: () => ({
-    //       backgroundColor: 'red.500',
-    //     }),
-    //     success: () => ({
-    //       backgroundColor: 'green.500',
-    //     }),
-    //   },
-    // },
-    // Text: {
-    //   baseStyle: {
-    //     // fontFamily: 'NunitoSans-Regular',
-    //     _light: { color: 'baseDark.500' },
-    //     _dark: { color: 'baseLight.500' },
-    //   },
-    //   variants: {
-    //     cardCaveat: () => ({
-    //       fontSize: 'xl',
-    //       fontFamily: 'Caveat-Regular',
-    //       color: 'primary.500',
-    //       _dark: { color: 'primary.500' },
-    //     }),
-    //     primaryButton: () => ({
-    //       //   fontFamily: 'NunitoSans-Bold',
-    //     }),
-    //   },
-    // },
   },
   fontConfig: {
     Archivo: {
