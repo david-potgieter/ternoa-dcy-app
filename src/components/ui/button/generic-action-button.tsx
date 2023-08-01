@@ -14,7 +14,7 @@ export function GenericActionButton({
     <Pressable onPress={action}>
       <Center py="2" px="3" bgColor="tGray.600" rounded="full">
         <HStack space="1" alignItems="center">
-          <Icon width="20" height="20" color="primary.500" />
+          <Icon width="20" height="20" color="#3D8DFF" />
           <Text fontSize="sm">{label}</Text>
         </HStack>
       </Center>
