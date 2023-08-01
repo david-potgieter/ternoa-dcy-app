@@ -37,8 +37,8 @@ export function CreateWalletForm() {
   } = useForm({
     mode: 'onChange',
     defaultValues: {
-      password: 'Tester099',
-      confirmPassword: 'Tester099',
+      password: '',
+      confirmPassword: '',
     },
     resolver: zodResolver(createWalletFormSchema),
   })

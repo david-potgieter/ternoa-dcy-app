@@ -11,3 +11,13 @@ export function TransactionItemDate({ timestamp }: { timestamp: string }) {
     </Text>
   )
 }
+
+export function TransactionDetailDate({ timestamp }: { timestamp: string }) {
+  const utcTimestamp = parseISO(timestamp)
+  const zonedDate = utcToZonedTime(utcTimestamp, 'UTC')
+  return (
+    <Text fontSize="xs" fontFamily="Archivo-Regular" fontWeight="400" color="white">
+      {format(new Date(zonedDate), "MMM dd 'at' hh:mmaaa")}
+    </Text>
+  )
+}

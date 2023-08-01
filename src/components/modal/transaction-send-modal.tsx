@@ -1,31 +1,24 @@
+import { CreateContactForm } from '@/components/form/create-contact-form'
 import XMark from '@/components/ui/image/icons/x_mark.svg'
+import { WalletContact } from '@/components/wallet/wallet-contact'
+import { shorten } from '@/helpers/shorten-string'
+import { contactStorageAtom } from '@/state/atoms/contacts-atom'
+import { NavParams, RouteParams } from '@/types/route-types'
+import { Contact, Wallet } from '@/types/wallet-types'
 import { useNavigation, useRoute } from '@react-navigation/native'
-import { Box, Center, HStack, Pressable, Text, VStack } from 'native-base'
-
-export function WalletContact({ name, label }: { name: string; label: string }) {
-  return (
-    <HStack justifyContent="space-between" alignItems="center" my="4" px="4">
-      <Box justifyContent="flex-start" flexDir="row">
-        <Center w="10" h="10" bgColor="red.200" rounded="full">
-          AV
-        </Center>
-        <VStack ml="4">
-          <Text>{name}</Text>
-          <Text>{label}</Text>
-        </VStack>
-      </Box>
-      <Box />
-    </HStack>
-  )
-}
+import { useAtomValue } from 'jotai'
+import { Box, HStack, Pressable, Text } from 'native-base'
 
 export function TransactionSendModal() {
-  const route = useRoute()
-  const navigation = useNavigation()
-
-  console.log(JSON.stringify(route, null, 2))
-
-  const { token, balance } = route?.params?.wallet?.balance
+  const route = useRoute<RouteParams>()
+  const navigation = useNavigation<NavParams>()
+  const contacts = useAtomValue(contactStorageAtom) as Contact[]
+  const wallet = route?.params
+  const {
+    name,
+    address,
+    balance: { balance, token },
+  } = wallet as Wallet
 
   return (
     <Box h="full" w="full" justifyContent="flex-end" safeAreaTop>
@@ -39,16 +32,31 @@ export function TransactionSendModal() {
             </Box>
           </Pressable>
         </HStack>
-        <Text>From</Text>
-        <WalletContact name="Account 1" label={`Balance ${balance.toFixed(3)} ${token}`} />
-        <Text>To</Text>
-        <Box>INSERT FORM HERE</Box>
-        <Box>Transfer between my accounts</Box>
+        <Text fontSize="sm" fontWeight="600">
+          From
+        </Text>
+        <WalletContact
+          name={name}
+          extra={shorten(address)}
+          label={`Balance ${balance ? balance.toFixed(3) : ''} ${token}`}
+        />
+        <Text fontSize="sm" fontWeight="600">
+          To
+        </Text>
+        <Box mt="2">
+          <CreateContactForm />
+        </Box>
 
-        <Text>Recent</Text>
-        <WalletContact name="Contact 1" label="0x3Dc...287dkj" />
-        <WalletContact name="Contact 2" label="0x2Al...287dkj" />
-        <WalletContact name="Contact 3" label="0x3Z1...287dkj" />
+        <Text fontSize="sm" fontWeight="600" color="tGray.400">
+          Recent
+        </Text>
+        {contacts.map(contact => (
+          <WalletContact
+            key={contact.address}
+            name={contact.name}
+            label={shorten(contact.address)}
+          />
+        ))}
       </Box>
     </Box>
   )

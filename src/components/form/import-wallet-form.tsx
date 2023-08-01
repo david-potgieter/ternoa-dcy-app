@@ -39,9 +39,9 @@ export function ImportWalletForm() {
   } = useForm({
     mode: 'onChange',
     defaultValues: {
-      seedPhrase: 'invite kiwi space upset around shell middle sing bundle rate jaguar need',
-      password: 'Tester099',
-      confirmPassword: 'Tester099',
+      seedPhrase: '',
+      password: '',
+      confirmPassword: '',
     },
     resolver: zodResolver(importWalletFormSchema),
   })

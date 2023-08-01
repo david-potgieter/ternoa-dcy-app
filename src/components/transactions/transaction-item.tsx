@@ -13,7 +13,7 @@ export function TransactionItem({ item }: { item: Transaction }) {
     <Pressable
       onPress={() =>
         navigation.navigate(HomeRoutes.HOME_TRANSACTION_DETAILS_MODAL, {
-          transaction: item.id,
+          transactionId: item.id,
         })
       }>
       <Box h="20" w="full" px="6" my="4">
@@ -26,11 +26,17 @@ export function TransactionItem({ item }: { item: Transaction }) {
               <TransactionItemIcon type={item.type} />
             </Center>
             <Box>
-              <TransactionItemDetails status={item.status} />
+              <TransactionItemDetails
+                label={`${item.type === 'send' ? 'Sent' : 'Receive'} ${item.symbol}`}
+                status={item.status}
+              />
             </Box>
           </HStack>
           <Box>
-            <TransactionItemAmount value="1.598 CAPS" usd="8.763" />
+            <TransactionItemAmount
+              value={`${item.amount} ${item.symbol}`}
+              usd={item.usdRate.toFixed(3)}
+            />
           </Box>
         </HStack>
       </Box>
