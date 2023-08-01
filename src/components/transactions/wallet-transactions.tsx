@@ -1,6 +1,6 @@
 import { TransactionItem } from '@/components/transactions/transaction-item'
-import { getTransactions } from '@/config/dot/polkadot-config'
 import { QUERY_KEYS } from '@/config/query/query-config'
+import { getTransactions } from '@/state/polkadot/use-polkadot'
 import { Box, ScrollView } from 'native-base'
 import { useQuery } from 'react-query'
 

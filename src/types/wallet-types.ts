@@ -10,11 +10,14 @@ export interface Balance {
   usdRate: number
 }
 
-export interface Wallet {
-  storage: string
-  name: string
+export interface Credentials {
   username: string
   password: string
+}
+
+export interface Wallet extends Credentials {
+  storage: string
+  name: string
   service: string
   address: string
   isLocked: boolean
