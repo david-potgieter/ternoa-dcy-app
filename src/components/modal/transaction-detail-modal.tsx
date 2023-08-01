@@ -44,8 +44,6 @@ export function TransactionDetailModal() {
     transactions?.filter((transaction: Transaction) => transaction.id === transactionId)?.[0] ??
     ({} as Transaction)
 
-  console.log(JSON.stringify(trxDetail, null, 2))
-
   return (
     <Box h="full" w="full" justifyContent="flex-end">
       <Pressable onPress={() => navigation.goBack()}>
