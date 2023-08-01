@@ -1,5 +1,5 @@
 import { QueryProvider } from '@/providers/query-provider'
-import { SuspenseProvider } from '@/providers/susense-provider'
+import { SuspenseProvider } from '@/providers/suspense-provider'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { NavigationContainer } from '@react-navigation/native'
 import RNBootSplash from 'react-native-bootsplash'
