@@ -19,7 +19,7 @@ Before running this project, ensure your environment is set up correctly. Follow
 
 1. Once set up, clone this repository
 2. Install the dependencies and needed setup by executing `yarn get-started`.
-3. This will install all the deps, and create a new `.env.local` for you. Please update as per the document shared.
+3. This will install all the deps, and create a new `.env` for you. Please update as per the document shared.
 
 ## Key Dependencies
 
