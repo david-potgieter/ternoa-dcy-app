@@ -3,17 +3,18 @@ import { toUnit } from '@/helpers/convert-to-unit'
 import { transactions } from '@/state/mocked/transactions'
 import { Balance } from '@/types/wallet-types'
 import { ApiPromise, WsProvider } from '@polkadot/api'
+import '@polkadot/api-augment'
 
-async function getUSDRate(tokenId: number) {
+async function getUSDRate() {
   try {
-    const url = `https://${CONFIG.cmcUrl}/cryptocurrency/quotes/latest?id=${tokenId}`
+    const url = `https://${CONFIG.cmcUrl}/cryptocurrency/quotes/latest?id=${CONFIG.cmcTokenId}`
     const response = await fetch(url, {
       headers: {
         'X-CMC_PRO_API_KEY': CONFIG.cmcApiKey,
       },
     })
     const data = await response.json()
-    const usdRate = data.data[tokenId].quote.USD.price ?? 0
+    const usdRate = data.data[CONFIG.cmcTokenId].quote.USD.price ?? 0
     return usdRate
   } catch (error) {
     const err = error as Error
@@ -23,6 +24,7 @@ async function getUSDRate(tokenId: number) {
 
 export async function initProvider() {
   try {
+    console.log('Connecting to Alphanet...')
     const provider = new WsProvider(CONFIG.wsProvider)
     const api = await ApiPromise.create({ provider })
     const [chain, nodeName, nodeVersion] = await Promise.all([
@@ -42,7 +44,7 @@ export async function initProvider() {
 export async function getBalance(address: string) {
   try {
     const api = await initProvider()
-    const usdRate = await getUSDRate(CONFIG.tokenId)
+    const usdRate = await getUSDRate()
     const {
       data: { free },
     } = await api.query.system.account(address)

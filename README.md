@@ -17,7 +17,9 @@ The project includes a variety of NPM scripts that aid with multiple development
 
 Before running this project, ensure your environment is set up correctly. Follow the instructions provided in React Native's [official setup guide](https://reactnative.dev/docs/environment-setup).
 
-Once set up, clone this repository and install the dependencies by executing `yarn get-started`. Below are the instructions form a new install.
+1. Once set up, clone this repository
+2. Install the dependencies and needed setup by executing `yarn get-started`.
+3. This will install all the deps, and create a new `.env.local` for you. Please update as per the document shared.
 
 ## Key Dependencies
 
