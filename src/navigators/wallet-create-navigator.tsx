@@ -14,7 +14,7 @@ const { Screen, Navigator } = createStackNavigator()
 export function WalletCreateNavigator() {
   return (
     <Navigator
-      initialRouteName={WalletRoutes.WALLET_CREATE_MNEMONIC_CONFIRM}
+      initialRouteName={WalletRoutes.WALLET_CREATE_PERMISSIONS}
       screenOptions={{
         gestureEnabled: false,
         headerStyle: extraStyle.navHeader,
