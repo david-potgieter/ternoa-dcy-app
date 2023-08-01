@@ -9,10 +9,11 @@
     "import:assets": "npx react-native-asset",
     "generate:splash": "yarn react-native generate-bootsplash assets/logo/logo.png --background-color=080A0C --logo-width=96 --assets-path=assets/bootsplash --flavor=main --platforms=android,ios",
     "pods": "cd ios && pod install && cd ..",
+    "bundle": "cd ios && bundle install && cd ..",
     "start": "react-native start",
     "start:reset": "react-native start --reset-cache",
     "test": "jest",
-    "get-started": " yarn && yarn pods && cp -R .env.example .env && yarn import:assets"
+    "get-started": " yarn && yarn bundle && yarn pods && cp -R .env.example .env && yarn import:assets"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
